@@ -1,1 +1,2 @@
 .vercel
+./app/firebase_service_account.json
