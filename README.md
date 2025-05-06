@@ -33,11 +33,8 @@ This is the Flask backend for **MediBot**, a RAG (Retrieval-Augmented Generation
 
 ##  Architecture
 
-![System Architecture](relative/path/to/your/image.png)
+![System Architecture](./architecture.jpg)
 
-> 📌 **Note:** Replace `relative/path/to/your/image.png` with the actual path to the architecture image in your repo (e.g., `assets/architecture.png`).
-
----
 
 ##  Running Locally
 
