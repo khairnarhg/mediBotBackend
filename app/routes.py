@@ -185,4 +185,3 @@ def configure_routes(app):
 
         except Exception as e:
             return jsonify({'success': False, 'message': str(e)}), 500
-
