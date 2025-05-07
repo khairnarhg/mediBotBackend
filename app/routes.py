@@ -127,6 +127,7 @@ def configure_routes(app):
 
     @app.route('/ask', methods=['POST'])
     def ask():
+        print("ask api route accessed")
         question = request.json.get('question')
         filename = request.json.get('filename')  # Filename for the vectordb
         user_id = request.json.get('user_id')  # Unique user/session ID to track memory
@@ -156,6 +157,8 @@ def configure_routes(app):
 
         # Get the answer and source documents from the vector database using memory
         answer, source_docs = retrieve_answer(question, vectordb, get_model(), memory)
+        print("answer:", answer)
+        print("sources:", source_docs)
         
         # Return the answer and sources to the user
         return jsonify({
